@@ -1,0 +1,302 @@
+digraph {
+	0 [label=Program]
+	1 [label=BEGIN]
+	0 -> 1
+	0 [label=Program]
+	3 [label=Statments]
+	0 -> 3
+	0 [label=Program]
+	2 [label=END]
+	0 -> 2
+	3 [label=Statments]
+	4 [label="write-statment"]
+	3 -> 4
+	4 [label="write-statment"]
+	5 [label=WRITE]
+	4 -> 5
+	4 [label="write-statment"]
+	6 [label=ident]
+	4 -> 6
+	6 [label=ident]
+	7 [label=a]
+	6 -> 7
+	4 [label="write-statment"]
+	8 [label=";"]
+	4 -> 8
+	3 [label=Statments]
+	9 [label="set-statment"]
+	3 -> 9
+	9 [label="set-statment"]
+	10 [label=SET]
+	9 -> 10
+	9 [label="set-statment"]
+	11 [label=ident]
+	9 -> 11
+	11 [label=ident]
+	12 [label=a]
+	11 -> 12
+	9 [label="set-statment"]
+	13 [label="="]
+	9 -> 13
+	9 [label="set-statment"]
+	14 [label=expression]
+	9 -> 14
+	14 [label=expression]
+	15 [label=term]
+	14 -> 15
+	15 [label=term]
+	16 [label=Factor]
+	15 -> 16
+	16 [label=Factor]
+	17 [label=integar_constant]
+	16 -> 17
+	17 [label=integar_constant]
+	18 [label=3]
+	17 -> 18
+	9 [label="set-statment"]
+	19 [label=";"]
+	9 -> 19
+	3 [label=Statments]
+	20 [label="if-statement"]
+	3 -> 20
+	20 [label="if-statement"]
+	21 [label=IF]
+	20 -> 21
+	20 [label="if-statement"]
+	22 [label=Condition]
+	20 -> 22
+	22 [label=Condition]
+	23 [label="=="]
+	22 -> 23
+	23 [label="=="]
+	24 [label=expression]
+	23 -> 24
+	24 [label=expression]
+	25 [label=term]
+	24 -> 25
+	25 [label=term]
+	26 [label=Factor]
+	25 -> 26
+	26 [label=Factor]
+	27 [label=identifier]
+	26 -> 27
+	27 [label=identifier]
+	28 [label=x]
+	27 -> 28
+	23 [label="=="]
+	29 [label=expression]
+	23 -> 29
+	29 [label=expression]
+	30 [label=term]
+	29 -> 30
+	30 [label=term]
+	31 [label=Factor]
+	30 -> 31
+	31 [label=Factor]
+	32 [label=integar_constant]
+	31 -> 32
+	32 [label=integar_constant]
+	33 [label=2]
+	32 -> 33
+	29 [label=expression]
+	34 [label=addop]
+	29 -> 34
+	34 [label=addop]
+	35 [label="+"]
+	34 -> 35
+	29 [label=expression]
+	36 [label=expression]
+	29 -> 36
+	36 [label=expression]
+	37 [label=term]
+	36 -> 37
+	37 [label=term]
+	38 [label=expression]
+	37 -> 38
+	38 [label=expression]
+	39 [label="("]
+	38 -> 39
+	38 [label=expression]
+	40 [label=expression]
+	38 -> 40
+	40 [label=expression]
+	41 [label=term]
+	40 -> 41
+	41 [label=term]
+	42 [label=Factor]
+	41 -> 42
+	42 [label=Factor]
+	43 [label=integar_constant]
+	42 -> 43
+	43 [label=integar_constant]
+	44 [label=3]
+	43 -> 44
+	38 [label=expression]
+	45 [label=")"]
+	38 -> 45
+	20 [label="if-statement"]
+	46 [label=THEN]
+	20 -> 46
+	20 [label="if-statement"]
+	47 [label=Statements]
+	20 -> 47
+	47 [label=Statements]
+	48 [label="read-statment"]
+	47 -> 48
+	48 [label="read-statment"]
+	49 [label=read]
+	48 -> 49
+	48 [label="read-statment"]
+	50 [label=ident]
+	48 -> 50
+	50 [label=ident]
+	51 [label=x]
+	50 -> 51
+	48 [label="read-statment"]
+	52 [label=";"]
+	48 -> 52
+	47 [label=Statements]
+	53 [label="else-statement"]
+	47 -> 53
+	53 [label="else-statement"]
+	54 [label=ElSE]
+	53 -> 54
+	53 [label="else-statement"]
+	55 [label=Statements]
+	53 -> 55
+	55 [label=Statements]
+	56 [label="write-statment"]
+	55 -> 56
+	56 [label="write-statment"]
+	57 [label=write]
+	56 -> 57
+	56 [label="write-statment"]
+	58 [label=ident]
+	56 -> 58
+	58 [label=ident]
+	59 [label=y]
+	58 -> 59
+	56 [label="write-statment"]
+	60 [label=";"]
+	56 -> 60
+	20 [label="if-statement"]
+	61 [label=ENDIF]
+	20 -> 61
+	20 [label="if-statement"]
+	62 [label=";"]
+	20 -> 62
+	3 [label=Statments]
+	63 [label="while-statement"]
+	3 -> 63
+	63 [label="while-statement"]
+	64 [label=WHILE]
+	63 -> 64
+	63 [label="while-statement"]
+	65 [label=Condition]
+	63 -> 65
+	65 [label=Condition]
+	66 [label="=="]
+	65 -> 66
+	66 [label="=="]
+	67 [label=expression]
+	66 -> 67
+	67 [label=expression]
+	68 [label=term]
+	67 -> 68
+	68 [label=term]
+	69 [label=Factor]
+	68 -> 69
+	69 [label=Factor]
+	70 [label=identifier]
+	69 -> 70
+	70 [label=identifier]
+	71 [label=x]
+	70 -> 71
+	66 [label="=="]
+	72 [label=expression]
+	66 -> 72
+	72 [label=expression]
+	73 [label=term]
+	72 -> 73
+	73 [label=term]
+	74 [label=Factor]
+	73 -> 74
+	74 [label=Factor]
+	75 [label=integar_constant]
+	74 -> 75
+	75 [label=integar_constant]
+	76 [label=1]
+	75 -> 76
+	63 [label="while-statement"]
+	77 [label=DO]
+	63 -> 77
+	63 [label="while-statement"]
+	78 [label=Statements]
+	63 -> 78
+	78 [label=Statements]
+	79 [label="declare-statment"]
+	78 -> 79
+	79 [label="declare-statment"]
+	80 [label=declare]
+	79 -> 80
+	79 [label="declare-statment"]
+	81 [label=dataType]
+	79 -> 81
+	81 [label=dataType]
+	82 [label=STRING]
+	81 -> 82
+	79 [label="declare-statment"]
+	83 [label=ident]
+	79 -> 83
+	83 [label=ident]
+	84 [label=str]
+	83 -> 84
+	79 [label="declare-statment"]
+	85 [label=";"]
+	79 -> 85
+	63 [label="while-statement"]
+	86 [label=ENDWHILE]
+	63 -> 86
+	63 [label="while-statement"]
+	87 [label=";"]
+	63 -> 87
+	3 [label=Statments]
+	88 [label="call-statment"]
+	3 -> 88
+	88 [label="call-statment"]
+	89 [label=CALL]
+	88 -> 89
+	88 [label="call-statment"]
+	90 [label=ident]
+	88 -> 90
+	90 [label=ident]
+	91 [label=Findsum]
+	90 -> 91
+	88 [label="call-statment"]
+	92 [label="("]
+	88 -> 92
+	88 [label="call-statment"]
+	93 [label=arglist]
+	88 -> 93
+	93 [label=arglist]
+	94 [label=identifier]
+	93 -> 94
+	94 [label=identifier]
+	95 [label=a]
+	94 -> 95
+	93 [label=arglist]
+	96 [label=","]
+	93 -> 96
+	93 [label=arglist]
+	97 [label=identifier]
+	93 -> 97
+	97 [label=identifier]
+	98 [label=x]
+	97 -> 98
+	88 [label="call-statment"]
+	99 [label=")"]
+	88 -> 99
+	88 [label="call-statment"]
+	100 [label=";"]
+	88 -> 100
+}

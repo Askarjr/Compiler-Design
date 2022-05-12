@@ -1,0 +1,9 @@
+Begin
+WRITE a;
+SET a = 3;
+IF x == 2+3*5 THEN read x;
+ELSE write y;
+ENDIF;
+WHILE x == 1 DO declare STRING str; ENDWHILE;
+CALL Findsum(a, x);
+end
